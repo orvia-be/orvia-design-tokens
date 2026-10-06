@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Orvia design tokens 1.0.0</title>
+<link rel="stylesheet" href="./dist/tokens.css">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;900&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{ --letter: Archivo, system-ui, sans-serif }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--surface-page);color:var(--text-body);
+       font-family:var(--letter);letter-spacing:var(--tracking-body);line-height:var(--leading-body)}
+  .band{background:var(--surface-card);padding:var(--space-16) var(--gutter-desktop) var(--space-12)}
+  h1{font-size:var(--size-section);line-height:var(--leading-section);margin:0 0 var(--space-4);font-weight:900}
+  .lood{font-size:var(--size-lead);font-weight:700;letter-spacing:var(--tracking-lead);max-width:var(--measure-prose-max);margin:0}
+  main{padding:var(--space-12) var(--gutter-desktop) var(--space-20);max-width:var(--measure-content-max)}
+  section{margin-bottom:var(--space-14)}
+  h2{font-size:var(--size-legal-h2);margin:0 0 var(--space-2);font-weight:900;letter-spacing:var(--tracking-label)}
+  .intro{margin:0 0 var(--space-6);max-width:var(--measure-prose-max)}
+  .raster{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:var(--space-5)}
+  .staal{background:var(--surface-white);padding:var(--space-4)}
+  .vlak{height:72px;border:var(--control-rule) solid var(--border-hairline);margin-bottom:var(--space-3)}
+  code{font-family:ui-monospace,Menlo,monospace;font-size:var(--size-body-xs);display:block}
+  .hex{font-family:Inter,sans-serif;font-variant-numeric:tabular-nums;font-size:var(--size-body-xs);opacity:.6;letter-spacing:normal}
+  .staal p{font-size:var(--size-body-xs);letter-spacing:var(--tracking-card);line-height:var(--leading-card);
+           margin:var(--space-3) 0 0;padding-top:var(--space-3);border-top:var(--control-rule) solid var(--border-hairline)}
+  footer{background:var(--surface-dark);color:var(--text-inverse);padding:var(--space-10) var(--gutter-desktop)}
+  footer a{color:var(--text-inverse)}
+  @media (max-width:760px){.band,main,footer{padding-left:var(--gutter-mobile);padding-right:var(--gutter-mobile)}}
+</style>
+</head>
+<body>
+  <div class="band">
+    <h1>Orvia design tokens</h1>
+    <p class="lood">Versie 1.0.0. De waarden van het merk, publiek leesbaar — zonder de gelicentieerde fonts. Deze pagina is zelf met de substituutletters gezet: zo ziet een extern artefact eruit.</p>
+  </div>
+  <main>
+    <section>
+      <h2>Het merk</h2>
+      <p class="intro">Vijf kleuren, en dat is het hele merk. Plus de limetint als kaartoppervlak.</p>
+      <div class="raster">
+      <div class="staal">
+        <div class="vlak" style="background:#211e1d"></div>
+        <code>orvia.dark</code>
+        <span class="hex">#211e1d</span>
+        <p>Bijna-zwart. Tekst, donkere secties, hairlines.</p>
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#faf7f0"></div>
+        <code>orvia.cream</code>
+        <span class="hex">#faf7f0</span>
+        <p>Warm crème. Het werkvlak / de paginaachtergrond.</p>
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#ffffff"></div>
+        <code>orvia.white</code>
+        <span class="hex">#ffffff</span>
+        <p>Wit. Kaarten en invoervelden.</p>
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#bfd1f9"></div>
+        <code>orvia.blue</code>
+        <span class="hex">#bfd1f9</span>
+        <p>Lichtblauw. Vlak voor data en info.</p>
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#e0ed6f"></div>
+        <code>orvia.lime</code>
+        <span class="hex">#e0ed6f</span>
+        <p>Acid lime. Het merkaccent. Haalt als knopvlak met donkere tekst geen leesbaar contrast — gebruik daarvoor state.lime-hover-strong.</p>
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#edf5b8"></div>
+        <code>orvia.lime-tint</code>
+        <span class="hex">#edf5b8</span>
+        <p>Lichte limetint. Kaart- en bandoppervlak.</p>
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#ec612c"></div>
+        <code>orvia.orange</code>
+        <span class="hex">#ec612c</span>
+        <p>Accent voor actieve navigatie en inline links. Zelfde waarde als partner.fin-forward.</p>
+      </div></div>
+    </section>
+    <section>
+      <h2>Hover</h2>
+      <p class="intro">Altijd donkerder, en de waarden liggen vast. Niet herleiden met een filter.</p>
+      <div class="raster">
+      <div class="staal">
+        <div class="vlak" style="background:#5c5956"></div>
+        <code>state.dark-hover</code>
+        <span class="hex">#5c5956</span>
+        
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#8aafe8"></div>
+        <code>state.blue-hover-strong</code>
+        <span class="hex">#8aafe8</span>
+        <p>Grote CTA.</p>
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#afc0e8"></div>
+        <code>state.blue-hover-soft</code>
+        <span class="hex">#afc0e8</span>
+        <p>Nav-CTA.</p>
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#c0d03a"></div>
+        <code>state.lime-hover-strong</code>
+        <span class="hex">#c0d03a</span>
+        <p>Grote CTA. Haalt 9,72:1 met donkere tekst op wit — dit is de knopkleur, niet orvia.lime.</p>
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#d4e15c"></div>
+        <code>state.lime-hover-soft</code>
+        <span class="hex">#d4e15c</span>
+        <p>Nav-CTA.</p>
+      </div></div>
+    </section>
+    <section>
+      <h2>Partners</h2>
+      <p class="intro">Hoe Orvia naar zijn dochters verwijst, binnen een Orvia-oppervlak.</p>
+      <div class="raster">
+      <div class="staal">
+        <div class="vlak" style="background:#f8cd41"></div>
+        <code>partner.planet-talent</code>
+        <span class="hex">#f8cd41</span>
+        <p>Geel.</p>
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#ec612c"></div>
+        <code>partner.fin-forward</code>
+        <span class="hex">#ec612c</span>
+        <p>Oranje.</p>
+      </div></div>
+    </section>
+    <section>
+      <h2>Eigen huisstijl</h2>
+      <p class="intro">Voor papier dat onder de vlag van PT of FF naar een klant gaat. Niet binnen een Orvia-scherm.</p>
+      <div class="raster">
+      <div class="staal">
+        <div class="vlak" style="background:#faf7f0"></div>
+        <code>brand-own.orvia.paper</code>
+        <span class="hex">#faf7f0</span>
+        
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#ffffff"></div>
+        <code>brand-own.orvia.field</code>
+        <span class="hex">#ffffff</span>
+        
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#211e1d"></div>
+        <code>brand-own.orvia.ink</code>
+        <span class="hex">#211e1d</span>
+        
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#e0ed6f"></div>
+        <code>brand-own.orvia.accent</code>
+        <span class="hex">#e0ed6f</span>
+        
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#211e1d"></div>
+        <code>brand-own.orvia.accent-ink</code>
+        <span class="hex">#211e1d</span>
+        <p>Tekst OP het accent.</p>
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#bfd1f9"></div>
+        <code>brand-own.orvia.accent-2</code>
+        <span class="hex">#bfd1f9</span>
+        
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#8a8478"></div>
+        <code>brand-own.orvia.muted</code>
+        <span class="hex">#8a8478</span>
+        
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#e4ddcc"></div>
+        <code>brand-own.orvia.rule</code>
+        <span class="hex">#e4ddcc</span>
+        
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#f8f8f6"></div>
+        <code>brand-own.fin-forward.paper</code>
+        <span class="hex">#f8f8f6</span>
+        
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#ffffff"></div>
+        <code>brand-own.fin-forward.field</code>
+        <span class="hex">#ffffff</span>
+        
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#14171c"></div>
+        <code>brand-own.fin-forward.ink</code>
+        <span class="hex">#14171c</span>
+        
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#00674c"></div>
+        <code>brand-own.fin-forward.accent</code>
+        <span class="hex">#00674c</span>
+        <p>Donkergroen. Draagt WITTE tekst — anders dan Orvia's lime, dat donkere tekst nodig heeft.</p>
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#ffffff"></div>
+        <code>brand-own.fin-forward.accent-ink</code>
+        <span class="hex">#ffffff</span>
+        
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#fff36d"></div>
+        <code>brand-own.fin-forward.accent-2</code>
+        <span class="hex">#fff36d</span>
+        <p>Geel. Draagt GROENE tekst, nooit witte.</p>
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#6f7671"></div>
+        <code>brand-own.fin-forward.muted</code>
+        <span class="hex">#6f7671</span>
+        
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#e2e5e2"></div>
+        <code>brand-own.fin-forward.rule</code>
+        <span class="hex">#e2e5e2</span>
+        
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#faf9fb"></div>
+        <code>brand-own.planet-talent.paper</code>
+        <span class="hex">#faf9fb</span>
+        
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#ffffff"></div>
+        <code>brand-own.planet-talent.field</code>
+        <span class="hex">#ffffff</span>
+        
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#242365"></div>
+        <code>brand-own.planet-talent.ink</code>
+        <span class="hex">#242365</span>
+        <p>Marineblauw.</p>
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#c00f82"></div>
+        <code>brand-own.planet-talent.accent</code>
+        <span class="hex">#c00f82</span>
+        <p>Fuchsia.</p>
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#ffffff"></div>
+        <code>brand-own.planet-talent.accent-ink</code>
+        <span class="hex">#ffffff</span>
+        
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#242365"></div>
+        <code>brand-own.planet-talent.accent-2</code>
+        <span class="hex">#242365</span>
+        
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#6e6d8a"></div>
+        <code>brand-own.planet-talent.muted</code>
+        <span class="hex">#6e6d8a</span>
+        
+      </div>
+      <div class="staal">
+        <div class="vlak" style="background:#e4e3ec"></div>
+        <code>brand-own.planet-talent.rule</code>
+        <span class="hex">#e4e3ec</span>
+        
+      </div></div>
+    </section>
+    <section>
+      <h2>Gebruiken</h2>
+      <p class="intro">Eén CSS-bestand, aliassen blijven <code style="display:inline">var()</code>.</p>
+      <pre style="background:var(--surface-white);padding:var(--space-4);overflow:auto"><code>&lt;link rel="stylesheet" href="https://orvia-be.github.io/orvia-design-tokens/dist/tokens.css"&gt;
+
+.kaart {
+  background: var(--surface-card);
+  color: var(--text-body);
+  letter-spacing: var(--tracking-body);
+}</code></pre>
+    </section>
+  </main>
+  <footer>
+    <p>Gegenereerd uit <strong>orvia-be/orvia-design-system</strong> (privé). Niet met de hand bewerken.</p>
+  </footer>
+</body>
+</html>

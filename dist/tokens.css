@@ -1,0 +1,157 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --orvia-dark: #211e1d; /** Bijna-zwart. Tekst, donkere secties, hairlines. */
+  --orvia-cream: #faf7f0; /** Warm crème. Het werkvlak / de paginaachtergrond. */
+  --orvia-white: #ffffff; /** Wit. Kaarten en invoervelden. */
+  --orvia-blue: #bfd1f9; /** Lichtblauw. Vlak voor data en info. */
+  --orvia-lime: #e0ed6f; /** Acid lime. Het merkaccent. Haalt als knopvlak met donkere tekst geen leesbaar contrast — gebruik daarvoor state.lime-hover-strong. */
+  --orvia-lime-tint: #edf5b8; /** Lichte limetint. Kaart- en bandoppervlak. */
+  --orvia-orange: #ec612c; /** Accent voor actieve navigatie en inline links. Zelfde waarde als partner.fin-forward. */
+  --state-dark-hover: #5c5956;
+  --state-blue-hover-strong: #8aafe8; /** Grote CTA. */
+  --state-blue-hover-soft: #afc0e8; /** Nav-CTA. */
+  --state-lime-hover-strong: #c0d03a; /** Grote CTA. Haalt 9,72:1 met donkere tekst op wit — dit is de knopkleur, niet orvia.lime. */
+  --state-lime-hover-soft: #d4e15c; /** Nav-CTA. */
+  --neutral-placeholder: #cccccc;
+  --neutral-input-text: #999999;
+  --neutral-error: #dc2626;
+  --neutral-border-nav-light: rgba(33, 30, 29, 0.2);
+  --neutral-border-nav-dark: rgba(255, 255, 255, 0.2);
+  --neutral-scrim-hover: rgba(0, 0, 0, 0.3);
+  --neutral-tint-code: rgba(33, 30, 29, 0.06);
+  --neutral-tint-rule: rgba(33, 30, 29, 0.15);
+  --partner-planet-talent: #f8cd41; /** Geel. */
+  --partner-fin-forward: #ec612c; /** Oranje. */
+  --brand-own-orvia-paper: #faf7f0;
+  --brand-own-orvia-field: #ffffff;
+  --brand-own-orvia-ink: #211e1d;
+  --brand-own-orvia-accent: #e0ed6f;
+  --brand-own-orvia-accent-ink: #211e1d; /** Tekst OP het accent. */
+  --brand-own-orvia-accent-2: #bfd1f9;
+  --brand-own-orvia-muted: #8a8478;
+  --brand-own-orvia-rule: #e4ddcc;
+  --brand-own-fin-forward-paper: #f8f8f6;
+  --brand-own-fin-forward-field: #ffffff;
+  --brand-own-fin-forward-ink: #14171c;
+  --brand-own-fin-forward-accent: #00674c; /** Donkergroen. Draagt WITTE tekst — anders dan Orvia's lime, dat donkere tekst nodig heeft. */
+  --brand-own-fin-forward-accent-ink: #ffffff;
+  --brand-own-fin-forward-accent-2: #fff36d; /** Geel. Draagt GROENE tekst, nooit witte. */
+  --brand-own-fin-forward-muted: #6f7671;
+  --brand-own-fin-forward-rule: #e2e5e2;
+  --brand-own-planet-talent-paper: #faf9fb;
+  --brand-own-planet-talent-field: #ffffff;
+  --brand-own-planet-talent-ink: #242365; /** Marineblauw. */
+  --brand-own-planet-talent-accent: #c00f82; /** Fuchsia. */
+  --brand-own-planet-talent-accent-ink: #ffffff;
+  --brand-own-planet-talent-accent-2: #242365;
+  --brand-own-planet-talent-muted: #6e6d8a;
+  --brand-own-planet-talent-rule: #e4e3ec;
+  --gutter-mobile: 24px;
+  --gutter-tablet: 40px;
+  --gutter-desktop: 75px;
+  --measure-content-max: 1290px;
+  --measure-prose-max: 780px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-14: 56px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-section-top: 88px;
+  --space-section-top-hero: 190px; /** Lichte pagina's moeten onder de vaste nav uit komen. */
+  --radius-none: 0px;
+  --radius-photo: 8px; /** Alleen fotocrops. */
+  --radius-pill: 999px; /** De pil-knop: de signature control. */
+  --radius-code: 3px;
+  --duration-fast: 200ms;
+  --duration-base: 300ms;
+  --duration-marquee: 12s;
+  --effect-shadow-fab: 0px 4px 6px -1px rgba(0,0,0,0.1), 0px 2px 4px -2px rgba(0,0,0,0.1); /** De enige schaduw in het merk, en alleen op een zwevend element. Kaarten, knoppen en velden krijgen er geen. */
+  --effect-blur-quote: 12px; /** backdrop-blur op hover-quote-overlays. */
+  --control-nav-h-mobile: 64px;
+  --control-nav-h-tablet: 72px;
+  --control-nav-h-desktop: 80px;
+  --control-button-h: 48px; /** Sectie-CTA. */
+  --control-button-h-compact: 37px; /** Nav- en footer-CTA. */
+  --control-button-overlap: -8px; /** De labelcapsule schuift onder de pijlschijf. */
+  --control-input-h: 52px;
+  --control-rule: 1px; /** Hairline. Het merk scheidt met lijnen, niet met elevatie. */
+  --font-heading: Conso, Georgia, serif; /** Conso Bold, uitsluitend voor h1/h2. Een accentletter die overal opduikt is er geen meer. */
+  --font-display: 'PP Agrandir', sans-serif; /** UI, leads, labels, knoppen. */
+  --font-body: 'PP Agrandir', sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-numeric: Inter, sans-serif; /** PP Agrandir heeft geen tabulaire cijfers (advance widths 473–699 op 1000 upm in Regular). In een kolom met tachtig rijen moet je dan lezen in plaats van scannen. Toevoeging vanuit Max, zie brand/afnemers.md. */
+  --font-substitute-brand: Archivo, sans-serif; /** Vervanger voor Conso/PP Agrandir in artefacten die naar buiten gaan — die fonts zijn commercieel gelicentieerd. Zie LICENSE-FONTS.md. */
+  --weight-regular: 400;
+  --weight-bold: 700;
+  --weight-black: 900; /** Kaartlabels en statcijfers. Er is geen gewicht 500 in dit merk. */
+  --size-hero: 62px;
+  --size-hero-mobile: 36px;
+  --size-legal-title: 54px;
+  --size-legal-title-mobile: 32px;
+  --size-section: 40px;
+  --size-section-mobile: 28px;
+  --size-legal-h2: 28px;
+  --size-stat: 32px; /** Statcijfers, gewicht 900. */
+  --size-lead-lg: 22px;
+  --size-lead: 18px;
+  --size-body-lg: 16px; /** Body desktop. */
+  --size-body-md: 15px; /** Body mobiel. */
+  --size-body-sm: 14px;
+  --size-body-xs: 13px; /** Kaartkopij. */
+  --size-label: 16px;
+  --size-nav: 15px;
+  --size-button: 14px;
+  --size-micro: 12px;
+  --size-fine: 10px;
+  --leading-hero: 1.2;
+  --leading-section: 1.35;
+  --leading-body: 1.5;
+  --leading-body-relaxed: 1.625;
+  --leading-card: 1.6;
+  --tracking-body: 0.8px; /** Op 15–16px body. */
+  --tracking-lead: 0.66px; /** Op 22px bold lead. */
+  --tracking-card: 0.28px; /** Op 13–14px kaartkopij. */
+  --tracking-label: 1.12px; /** Kaartlabels in 900. */
+  --tracking-marquee: 1.26px;
+  --tracking-nav: 0.48px;
+  --tracking-stat: 2.24px;
+  --tracking-fine: 0.2px;
+  --tracking-caps: 0.8px; /** 10px kapitaal, formulierlabels. */
+  --surface-page: var(--orvia-cream); /** Het werkvlak. */
+  --surface-white: var(--orvia-white); /** Een blad op het werkvlak. */
+  --surface-dark: var(--orvia-dark); /** Donkere sectie. */
+  --surface-card: var(--orvia-lime-tint);
+  --surface-accent-blue: var(--orvia-blue); /** Data en informatie. */
+  --surface-accent-lime: var(--orvia-lime); /** Merkaccent. */
+  --surface-input: var(--orvia-white); /** Iets waar je in kunt typen draagt altijd wit — transparant leest op crème als uitgeschakeld. */
+  --text-body: var(--orvia-dark);
+  --text-heading: var(--orvia-dark);
+  --text-inverse: var(--orvia-white);
+  --text-link: var(--orvia-orange); /** Marketing-oppervlak. Een productscherm mag hiervan afwijken, zie brand/afnemers.md. */
+  --text-placeholder: var(--neutral-placeholder);
+  --text-input: var(--neutral-input-text);
+  --text-error: var(--neutral-error);
+  --border-hairline: var(--orvia-dark);
+  --border-hairline-inverse: var(--orvia-white);
+  --border-nav-light: var(--neutral-border-nav-light);
+  --border-nav-dark: var(--neutral-border-nav-dark);
+  --action-primary-surface: var(--orvia-lime);
+  --action-primary-surface-hover: var(--state-lime-hover-strong);
+  --action-primary-ink: var(--orvia-dark);
+  --action-info-surface: var(--orvia-blue);
+  --action-info-surface-hover: var(--state-blue-hover-strong);
+  --action-info-ink: var(--orvia-dark);
+  --action-dark-surface: var(--orvia-dark);
+  --action-dark-surface-hover: var(--state-dark-hover);
+  --action-dark-ink: var(--orvia-white);
+}
