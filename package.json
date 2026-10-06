@@ -1,0 +1,21 @@
+{
+  "name": "@orvia/design-tokens",
+  "version": "1.0.0",
+  "description": "Orvia design tokens — gegenereerd uit orvia-be/orvia-design-system. Niet met de hand bewerken.",
+  "type": "module",
+  "files": [
+    "dist",
+    "logo",
+    "icons"
+  ],
+  "exports": {
+    ".": "./dist/tokens.js",
+    "./css": "./dist/tokens.css",
+    "./json": "./dist/tokens.json",
+    "./office": "./dist/office.json",
+    "./logo/*": "./logo/*",
+    "./icons/*": "./icons/*"
+  },
+  "license": "UNLICENSED",
+  "private": false
+}
