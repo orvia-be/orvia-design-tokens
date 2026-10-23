@@ -2657,4 +2657,94 @@ export default {
       path: ["tracking", "caps"],
     },
   },
+  "brand-font": {
+    $description:
+      "Letters van de merken onder Orvia. Eigen sites, niet de Orvia-site. Allebei vrije Google-fonts, lokaal te hosten.",
+    "planet-talent": {
+      heading: {
+        $value: ["Comfortaa", "sans-serif"],
+        $description:
+          "Brandbook Planet Talent 2018: titels, tussentitels en quotes, in bold.",
+        filePath: "tokens/typography.tokens.json",
+        isSource: true,
+        $type: "fontFamily",
+        original: {
+          $value: ["Comfortaa", "sans-serif"],
+          $description:
+            "Brandbook Planet Talent 2018: titels, tussentitels en quotes, in bold.",
+          $type: "fontFamily",
+        },
+        name: "BrandFontPlanetTalentHeading",
+        attributes: {
+          category: "brand-font",
+          type: "planet-talent",
+          item: "heading",
+        },
+        path: ["brand-font", "planet-talent", "heading"],
+      },
+      body: {
+        $value: ["Open Sans", "sans-serif"],
+        $description: "Bodycopy. Regular/italic/bold volgens het brandbook.",
+        filePath: "tokens/typography.tokens.json",
+        isSource: true,
+        $type: "fontFamily",
+        original: {
+          $value: ["Open Sans", "sans-serif"],
+          $description: "Bodycopy. Regular/italic/bold volgens het brandbook.",
+          $type: "fontFamily",
+        },
+        name: "BrandFontPlanetTalentBody",
+        attributes: {
+          category: "brand-font",
+          type: "planet-talent",
+          item: "body",
+        },
+        path: ["brand-font", "planet-talent", "body"],
+      },
+    },
+    "fin-forward": {
+      heading: {
+        $value: ["Poppins", "sans-serif"],
+        $description:
+          "Keuze Koen 2026-10-23. Vervangt proxima-nova (Adobe Typekit) — die licentie hangt aan een kit en een domein.",
+        filePath: "tokens/typography.tokens.json",
+        isSource: true,
+        $type: "fontFamily",
+        original: {
+          $value: ["Poppins", "sans-serif"],
+          $description:
+            "Keuze Koen 2026-10-23. Vervangt proxima-nova (Adobe Typekit) — die licentie hangt aan een kit en een domein.",
+          $type: "fontFamily",
+        },
+        name: "BrandFontFinForwardHeading",
+        attributes: {
+          category: "brand-font",
+          type: "fin-forward",
+          item: "heading",
+        },
+        path: ["brand-font", "fin-forward", "heading"],
+      },
+      body: {
+        $value: ["Montserrat", "sans-serif"],
+        $description:
+          "Keuze Koen 2026-10-23, conform de themavariabelen van de bestaande site.",
+        filePath: "tokens/typography.tokens.json",
+        isSource: true,
+        $type: "fontFamily",
+        original: {
+          $value: ["Montserrat", "sans-serif"],
+          $description:
+            "Keuze Koen 2026-10-23, conform de themavariabelen van de bestaande site.",
+          $type: "fontFamily",
+        },
+        name: "BrandFontFinForwardBody",
+        attributes: {
+          category: "brand-font",
+          type: "fin-forward",
+          item: "body",
+        },
+        path: ["brand-font", "fin-forward", "body"],
+      },
+    },
+  },
 };

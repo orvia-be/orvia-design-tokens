@@ -127,6 +127,10 @@
   --tracking-stat: 2.24px;
   --tracking-fine: 0.2px;
   --tracking-caps: 0.8px; /** 10px kapitaal, formulierlabels. */
+  --brand-font-planet-talent-heading: Comfortaa, sans-serif; /** Brandbook Planet Talent 2018: titels, tussentitels en quotes, in bold. */
+  --brand-font-planet-talent-body: 'Open Sans', sans-serif; /** Bodycopy. Regular/italic/bold volgens het brandbook. */
+  --brand-font-fin-forward-heading: Poppins, sans-serif; /** Keuze Koen 2026-10-23. Vervangt proxima-nova (Adobe Typekit) — die licentie hangt aan een kit en een domein. */
+  --brand-font-fin-forward-body: Montserrat, sans-serif; /** Keuze Koen 2026-10-23, conform de themavariabelen van de bestaande site. */
   --surface-page: var(--orvia-cream); /** Het werkvlak. */
   --surface-white: var(--orvia-white); /** Een blad op het werkvlak. */
   --surface-dark: var(--orvia-dark); /** Donkere sectie. */

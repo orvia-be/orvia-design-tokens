@@ -81,6 +81,10 @@
     "font.body": "PP Agrandir",
     "font.mono": "ui-monospace",
     "font.numeric": "Inter",
-    "font.substitute-brand": "Archivo"
+    "font.substitute-brand": "Archivo",
+    "brand-font.planet-talent.heading": "Comfortaa",
+    "brand-font.planet-talent.body": "Open Sans",
+    "brand-font.fin-forward.heading": "Poppins",
+    "brand-font.fin-forward.body": "Montserrat"
   }
 }

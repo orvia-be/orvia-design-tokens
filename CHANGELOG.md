@@ -2,6 +2,25 @@
 
 Een release = een versieverhoging in `package.json` + een regel hier (BES-036 punt 2).
 
+## 1.1.0 — 2026-10-23
+
+De merksites komen erbij: `finforward.be` en `planet-talent.com` worden in Astro
+herbouwd en halen hun letters voortaan hier.
+
+**Toegevoegd**
+- `brand-font.planet-talent.{heading,body}` — Comfortaa / Open Sans, uit het
+  Planet Talent-brandbook (2018), bevestigd tegen de live site.
+- `brand-font.fin-forward.{heading,body}` — Poppins / Montserrat. Keuze van Koen
+  op 2026-10-23: vervangt `proxima-nova` (Adobe Typekit), waarvan de licentie aan
+  een kit én een domein hangt. Beide nieuwe letters zijn vrije Google-fonts.
+
+**Niet gewijzigd**
+- De kleuren van beide merken (`brand-own.*`) blijven zoals ze stonden: ze zijn op
+  2026-10-23 gemeten tegen de live sites en kloppen (FF `#00674c`/`#fff36d`,
+  PT `#242365`/`#c00f82`). Het brandbook noemt een ander geel (`#ebc522`) dan
+  `partner.planet-talent` (`#f8cd41`); beslissing van Koen: **de bestaande
+  website is leidend**, dus ongemoeid gelaten.
+
 ## 1.0.0 — 2026-10-06
 
 Eerste versie. Het merk staat voor het eerst in git, tool-onafhankelijk.

@@ -1,6 +1,6 @@
 {
   "name": "@orvia/design-tokens",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Orvia design tokens — gegenereerd uit orvia-be/orvia-design-system. Niet met de hand bewerken.",
   "type": "module",
   "files": [

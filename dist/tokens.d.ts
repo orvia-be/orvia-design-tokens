@@ -207,3 +207,11 @@ export const TrackingStat: string;
 export const TrackingFine: string;
 /** 10px kapitaal, formulierlabels. */
 export const TrackingCaps: string;
+/** Brandbook Planet Talent 2018: titels, tussentitels en quotes, in bold. */
+export const BrandFontPlanetTalentHeading: string[];
+/** Bodycopy. Regular/italic/bold volgens het brandbook. */
+export const BrandFontPlanetTalentBody: string[];
+/** Keuze Koen 2026-10-23. Vervangt proxima-nova (Adobe Typekit) — die licentie hangt aan een kit en een domein. */
+export const BrandFontFinForwardHeading: string[];
+/** Keuze Koen 2026-10-23, conform de themavariabelen van de bestaande site. */
+export const BrandFontFinForwardBody: string[];

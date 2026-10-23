@@ -1,7 +1,7 @@
 # Orvia design tokens
 
 Publieke, fontloze uitgang van **orvia-be/orvia-design-system** (privé).
-Versie 1.0.0 — zie [CHANGELOG.md](CHANGELOG.md).
+Versie 1.1.0 — zie [CHANGELOG.md](CHANGELOG.md).
 
 Overzicht: https://orvia-be.github.io/orvia-design-tokens/
 
